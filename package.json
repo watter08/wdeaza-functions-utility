@@ -1,0 +1,25 @@
+{
+  "name": "wdeaza-functions-utility",
+  "version": "1.0.3",
+  "description": "helper functions for validating forms",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^8.3.2",
+    "wdeaza-functions-utility": "^1.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watter08/wdeaza-functions-utility.git"
+  },
+  "bugs": {
+    "url": "https://github.com/watter08/wdeaza-functions-utility/issues"
+  },
+  "homepage": "https://github.com/watter08/wdeaza-functions-utility#readme"
+}
