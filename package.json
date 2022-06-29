@@ -1,10 +1,10 @@
 {
   "name": "wdeaza-functions-utility",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "helper functions for validating forms",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs": "jsdoc -c jsdoc.json"
   },
   "keywords": [],
   "author": "",

@@ -16,4 +16,5 @@
 ### isValidEmail
 ### isValidPassword
 ### isValidPhone
+### isInRange
 

@@ -1,3 +1,4 @@
+//@ts-check
 const uuid = require('uuid');
 
 
@@ -5,7 +6,11 @@ const uuid = require('uuid');
  * GET UNIQUE ID OF KEY
  * **********************************************************/
 
- const GetUuId = () => { return String(uuid.v4()) };
+/** 
+ * Functions that return a string with a unic key code.
+ * @type {string | any}
+ */
+ const GetUuId = () =>  uuid.v4().toString();
 
 
 /*************************************************************
@@ -29,9 +34,7 @@ const uuid = require('uuid');
      const isInvalidInput = (errors, name)   => {  return errors && errors[name] ? true : false };
 
      const isInvalidInputChild = (errors, name)   => {  
-        let bole = Object.entries(errors).length <= 0 ? false :  errors && errors?.Formulario[name.split('.')[1]] ? true : false ;
-        return bole;
-    
+        return Object.entries(errors).length <= 0 ? false :  errors && errors?.Formulario[name.split('.')[1]] ? true : false ;    
     };
 
 
@@ -130,6 +133,8 @@ const uuid = require('uuid');
     return NewPassword?.toString()?.toLowerCase() === OldPassword?.toString()?.toLowerCase() ? true : false;
 }
 
+const isInRange = (Min , Max , Valor) => Number(Valor) >= Number(Min) && Number(Valor) <= Number(Max) ;
+
 module.exports = {
     isMatchString,
     isBooleano,
@@ -145,4 +150,5 @@ module.exports = {
     isInvalidInput,
     HasErrorShowError,
     GetUuId,
+    isInRange
 }
